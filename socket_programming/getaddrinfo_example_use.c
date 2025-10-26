@@ -1,11 +1,6 @@
 /******************************************************************
  *
- *  showip.c -- Shows the IP addresses for a host given on the
- *              command line
- *  Usage - showip <hostname>
- *
- *  Goal : To use getaddrinfo() to extract required information
- *         to show the IP address of a host
+ *  Purpose : An example of how to use getaddrinfo()
  *
  *  "getaddrinfo gives a result to a linked list of the node/hostname"
  *  int getaddrinfo(const char *restrict nodename, // nodename == hostname
