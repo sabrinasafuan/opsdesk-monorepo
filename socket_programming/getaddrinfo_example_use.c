@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
     hints.ai_family = AF_UNSPEC; // AF_UNSPEC indicates that getaddrinfo() should return socket addresses for any address family (either IPv4 or IPv6
     hints.ai_flags = AI_PASSIVE; // wildcard, fill my IP for me...
 
-    // use port 3490 for utp/udp
+    // use port 3490 for tcp/udp
     if (status == getaddrinfo(NULL, "3490", &hints, &res) != 0) // returns 0 if succeed
     {
         fprintf(stderr, "gai/getaddrinfo error: %s\n", gai_strerror(status));
