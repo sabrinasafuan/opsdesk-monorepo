@@ -3,9 +3,11 @@
  *  Purpose : showip is a program that uses getaddrinfo() to print
  *            the IP addresses for the host specified
  *
- *  NOTE ! THIS DOESN'T CONNECT TO A PARTICULAR SPECIFIED HOST. THIS
- *  IS ONLY A SAMPLE THAT SETS UP STRUCTURES TO BE USED LATER WHEN
- *  CONNECTION IS MADE AVAIBLE.
+ *  EXAMPLE : ./showip www.google.com
+ *  OUTPUT : Successfully retrieved serverinfo !
+ *  IP addresses for www.google.com:
+ *
+ *  IPv4: 172.217.27.4
  *
  *  Function calls used :
  *
@@ -40,7 +42,7 @@ int main(int argc, char *argv[])
 
     memset(&hints, 0, sizeof(hints));
     hints.ai_socktype = AF_UNSPEC; // use either IPv4 / IPv6
-    hints.ai_family = SOCK_STREAM;
+    hints.ai_family = AF_INET;
 
     if (argc < 2)
     {
