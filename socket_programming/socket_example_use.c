@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 {
     if (argc < 2)
     {
-        printf("Usage : ./test <hostname> \n");
+        printf("Usage : ./socket_example_use <hostname> \n");
     }
 
     char *hostname;
